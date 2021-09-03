@@ -1,0 +1,91 @@
+.main_div {
+  width: 100%;
+  height: 50%;
+  position: absolute;
+  margin-top: 70px;
+  .c {
+    z-index: 2;
+    border-radius: 50%;
+    border: 4px solid black;
+    background-image: linear-gradient(white, white), linear-gradient(to right, black, black);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    border: 4px solid black;
+    position: absolute;
+
+    border-radius: 50%;
+    span {
+      z-index: 2;
+      position: relative;
+      padding-left: 13px;
+      top: calc(50% - 14px);
+    }
+  }
+  .rounded_1 {
+    width: 100vw;
+    height: 100vw;
+  }
+  .rounded_2 {
+    width: 85vw;
+    height: 85vw;
+    top: calc(23% - 148px);
+    left: calc(48% - 150px);
+    top: calc(46% - 148px);
+  }
+  .rounded_3 {
+    width: 70vw;
+    height: 70vw;
+    top: calc(23vh - 130px);
+    left: calc(54% - 141px);
+  }
+  .rounded_4 {
+    width: 55vw;
+    height: 55vw;
+    top: calc(27vh - 134px);
+    left: calc(62% - 141px);
+  }
+  .rounded_5 {
+    width: 40vw;
+    height: 40vw;
+    top: calc(33vh - 153px);
+    left: calc(68% - 134px);
+  }
+  .rounded_6 {
+    width: 20vw;
+    height: 20vw;
+    top: calc(37vh - 148px);
+    left: calc(78% - 134px);
+    background: red !important;
+  }
+  .rounded_7 {
+    width: 4vw;
+    height: 4vw;
+    top: calc(21vh - 148px);
+    left: calc(65% - 134px);
+    background: #0011ff !important;
+    z-index: 2;
+    border-radius: 50%;
+    position: absolute;
+  }
+  .rounded_8 {
+    width: 4vw;
+    height: 4vw;
+    top: calc(21vh - 148px);
+    left: calc(102% - 134px);
+    background: #0011ff !important;
+    z-index: 2;
+    border-radius: 50%;
+    position: absolute;
+  }
+}
+.background_color{
+  background: green !important;
+}
+.total_points {
+  padding: 20px;
+    border: 2px solid;
+    margin-left: 10px;
+}
+.margin_top {
+  margin-top: 30px;
+}

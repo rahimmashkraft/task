@@ -1,0 +1,43 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Task
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="margin_top">
+      <ion-label>Total Points</ion-label>
+      <span class="total_points">{{total_points}}</span>
+      <p>{{ time | async}}</p>
+  </div>
+  <div class="margin_top">
+    <ion-label>Series of Points</ion-label>
+    <span *ngFor="let i of add_number_array"> {{i}},</span>
+  </div>
+  <div class="main_div">
+    <div class="rounded_1 c" [class.background_color]="isCheckClick == 1" (click)="addNumber(1)">
+      <span>1</span>
+    </div>
+    <div class="rounded_2 c" [class.background_color]="isCheckClick == 2" (click)="addNumber(2)">
+      <span>2</span>
+    </div>
+    <div class="rounded_3 c" [class.background_color]="isCheckClick == 3" (click)="addNumber(3)">
+      <span>3</span>
+    </div>
+    <div class="rounded_4 c" [class.background_color]="isCheckClick == 4" (click)="addNumber(4)">
+      <span>4</span>
+    </div>
+    <div class="rounded_5 c" [class.background_color]="isCheckClick == 5" (click)="addNumber(5)">
+      <span>5</span>
+    </div>
+    <div class="rounded_6 c" (click)="addNumber(6)">
+      <span>6</span>
+    </div>
+    <div class="rounded_7 c_" (click)="addNumber(8)">
+    </div>
+    <div class="rounded_8 c_" (click)="addNumber(8)">
+    </div>
+  </div>
+</ion-content>
